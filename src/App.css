@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+::-webkit-scrollbar{
+  width: 10px;
+  display: none;
+}
+::-webkit-scrollbar-track{
+  border: none;
+  background-color: #0d123c;
+}
+::-webkit-scrollbar-thumb {
+  background: none;
+  height: 3rem !important;
+  border-radius: 5px;
+}
