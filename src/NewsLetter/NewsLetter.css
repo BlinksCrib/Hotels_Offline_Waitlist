@@ -103,9 +103,9 @@
   border-radius: 5px;
   font-size: 16px;
   box-shadow: 0 9px 15px -6px rgb(0 0 0 / 39%);
-  height: 50px;
+  height: 40px;
   width: 100% !important;
-  padding: 30px;
+  padding: 10px;
   outline: none !important;
   transition: 0.8s;
 }
