@@ -7,15 +7,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 20px;
 }
-.logo h1{
-    font-size: 1.5rem;
-    color: #0E43FF;
-    cursor: pointer;
+.logo img{
+    cursor: pointer !important;
 }
 .navbars{
-    width: 85%;
+    width: 95%;
     height: 100%;
     display: flex;
     justify-content: space-between;

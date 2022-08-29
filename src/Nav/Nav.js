@@ -3,8 +3,16 @@ import './Nav.css';
 import img1 from '../assets/Jadsonbgremoved1.png'
 import img2 from '../assets/Rectangle1.png';
 import img3 from '../assets/Arrow1.png';
+import { useNavigate } from 'react-router-dom';
 
 const Nav = () => {
+let navigate = useNavigate()
+function goToWaitList() {
+  navigate('/')
+}
+
+
+
     const [timerDays, setTimerDays] = useState("00")
     const [timerHour, setTimerHour] = useState("00")
     const [timerMinutes, setTimerMinutes] = useState("00")
@@ -13,7 +21,7 @@ const Nav = () => {
     let interval = useRef();
 
     const startTimer = () =>{
-        const countdownDate = new Date("September 17, 2022 00:00:00").getTime();
+        const countdownDate = new Date("September 22, 2022 00:00:00").getTime();
 
         interval = setInterval(() =>{
             const now = new Date().getTime();
@@ -45,15 +53,20 @@ const Nav = () => {
         <div className='subCont'>
           <div className='content1'>
             <div className='child-content1'>
-              <div className='logo'>
-                <img src={img1} alt='logo' />
+              <div className='navbar-container'>
+                <nav className='navbars'>
+                  <div className='logo'>
+                    <img src={img1} alt='logo' onClick={goToWaitList} />
+                    {/* <h1 onClick={goToWaitList}>HOTELS OFFLINE</h1> */}
+                  </div>
+                </nav>
               </div>
-              <div>
+              <div className='soon'>
                 <div className='arrow'>
                   <img src={img3} alt='approved' />
                   <h3>We’re</h3>
                 </div>
-                <div>
+                <div className='launching'>
                   <h3>launching soon!</h3>
                 </div>
               </div>
@@ -99,17 +112,17 @@ const Nav = () => {
                 <div className='icon'>
                   <i class='fa-brands fa-youtube'></i>
                 </div>
-                <div className='icon'>
+                {/* <div className='icon'>
                   <i class='fab fa-instagram-square'></i>
                 </div>
                 <div className='icon'>
                   <i class='fa-brands fa-linkedin-in'></i>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
           <div className='content2'>
-            <img src={img2} alt='approved' />
+            <img src={img2} alt='2 people sitting on the farm' />
           </div>
         </div>
       </div>
